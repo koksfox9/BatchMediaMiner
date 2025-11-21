@@ -1,0 +1,30 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="260" fill="#0d1117"/>
+
+  <!-- glowing background circle -->
+  <circle cx="950" cy="130" r="140" fill="url(#grad)" opacity="0.15"/>
+
+  <!-- Play/download icon -->
+  <g transform="translate(850,55)">
+    <rect x="0" y="0" width="260" height="150" rx="20" fill="#161b22" stroke="url(#grad)" stroke-width="2"/>
+    <polygon points="40,30 140,75 40,120" fill="url(#grad)"/>
+    <rect x="170" y="45" width="15" height="60" rx="4" fill="#0ea5e9"/>
+    <rect x="195" y="45" width="15" height="60" rx="4" fill="#6366f1"/>
+  </g>
+
+  <!-- Text -->
+  <text x="60" y="120" fill="url(#grad)" font-size="64" font-family="DejaVu Sans Mono" font-weight="bold">
+    BatchMediaMiner
+  </text>
+
+  <text x="60" y="175" fill="#c9d1d9" font-size="28" font-family="DejaVu Sans Mono">
+    Universal multimedia extraction engine
+  </text>
+</svg>
