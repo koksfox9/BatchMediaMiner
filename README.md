@@ -1,8 +1,6 @@
 <p align="center">
   <img src="assets/banner.svg" width="100%" />
 </p>
-
-# BatchMediaMiner  
 Wszechstronny downloader multimediów z wielowątkowością, kolejką pobierania, konwersją audio, obsługą playlist i graficznym interfejsem użytkownika.  
 Program pozwala pobierać materiały z YouTube w formacie audio (MP3) lub video (MP4), z wyborem jakości i automatycznym tagowaniem plików.
 
