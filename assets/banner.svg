@@ -4,27 +4,34 @@
       <stop offset="0%" stop-color="#0ea5e9"/>
       <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
+
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
+  <!-- background -->
   <rect width="1200" height="260" fill="#0d1117"/>
 
-  <!-- glowing background circle -->
-  <circle cx="950" cy="130" r="140" fill="url(#grad)" opacity="0.15"/>
+  <!-- subtle gradient glow on the right -->
+  <circle cx="1000" cy="130" r="220" fill="url(#grad)" opacity="0.13"/>
 
-  <!-- Play/download icon -->
-  <g transform="translate(850,55)">
-    <rect x="0" y="0" width="260" height="150" rx="20" fill="#161b22" stroke="url(#grad)" stroke-width="2"/>
-    <polygon points="40,30 140,75 40,120" fill="url(#grad)"/>
-    <rect x="170" y="45" width="15" height="60" rx="4" fill="#0ea5e9"/>
-    <rect x="195" y="45" width="15" height="60" rx="4" fill="#6366f1"/>
+  <!-- LOGO (same proportions as the new final logo, scaled down) -->
+  <g transform="translate(860,30) scale(0.7)">
+    <circle cx="150" cy="150" r="92" fill="none" stroke="url(#grad)" stroke-width="12" filter="url(#softglow)" opacity="0.9"/>
+    <polygon points="130,115 195,150 130,185" fill="url(#grad)" filter="url(#softglow)"/>
   </g>
 
-  <!-- Text -->
-  <text x="60" y="120" fill="url(#grad)" font-size="64" font-family="DejaVu Sans Mono" font-weight="bold">
+  <!-- TEXT -->
+  <text x="60" y="130" fill="url(#grad)" font-size="72" font-family="DejaVu Sans Mono" font-weight="bold">
     BatchMediaMiner
   </text>
 
-  <text x="60" y="175" fill="#c9d1d9" font-size="28" font-family="DejaVu Sans Mono">
+  <text x="60" y="185" fill="#c9d1d9" font-size="30" font-family="DejaVu Sans Mono">
     Universal multimedia extraction engine
   </text>
 </svg>
